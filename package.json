@@ -5,7 +5,7 @@
   "scripts": {
     "build": "6to5 src --out-dir dist --source-maps",
     "build-concat": "6to5 src --out-file dist/example.min.js --source-maps",
-    "watch": "node_modules/.bin/rewatch src/*.js src/**/*.js -c 'npm run build'",
+    "watch": "node_modules/.bin/rewatch src/*.js src/**/*.js src/*.es6 src/**/*.es6 -c 'npm run build'",
     "serve": "node_modules/.bin/serve .",
     "dev": "npm run serve & npm run watch",
     "start": "npm run dev"
