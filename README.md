@@ -12,8 +12,16 @@ The very first, project [6to5](https://6to5.org) is required.
 
 ### Build
 
+Build dist files from `./src` folder
+
 ```bash
 npm run build
+```
+
+Build and concat to one minimal file.
+
+```bash
+npm run build-concat
 ```
 
 ### Watch and serve
