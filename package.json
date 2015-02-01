@@ -1,0 +1,18 @@
+{
+  "name": "es6-workflow",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build": "6to5",
+    "build-js": "bin/build-js.sh",
+    "build-less": "bin/build-less.sh",
+    "watch": "bin/watch.sh",
+    "dev": "ionic serve & npm run watch",
+    "start": "npm run dev"
+  },
+  "author": "turing <o.u.turing@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "6to5": "^3.3.0"
+  }
+}
