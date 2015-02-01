@@ -4,8 +4,10 @@ Use ES6, today.
 
 ### Install
 
+The very first, project [6to5](https://6to5.org) is required.
+
 ```bash
-npm install --global 6to5
+[sudo] npm install --global 6to5
 ```
 
 ### Build
