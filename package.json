@@ -1,20 +1,19 @@
 {
   "name": "es6-workflow",
   "private": true,
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "6to5 src --out-dir dist --source-maps --playground",
-    "build-concat": "6to5 src --out-file dist/example.min.js --source-maps --playground",
-    "watch": "node_modules/.bin/rewatch src/*.js src/**/*.js src/*.es6 src/**/*.es6 -c 'npm run build'",
+    "build": "node_modules/.bin/babel src --out-dir dist --source-maps",
+    "build-watch": "node_modules/.bin/babel src --out-dir dist --source-maps --watch",
+    "build-concat": "node_modules/.bin/babel src --out-file dist/index.js --source-maps",
     "serve": "node_modules/.bin/serve .",
-    "dev": "npm run serve & npm run watch",
+    "dev": "npm run build-watch & npm run serve",
     "start": "npm run dev"
   },
   "author": "turing <o.u.turing@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "6to5": "^3.3.0",
-    "rewatch": "^0.4.0",
+    "babel": "^5.1.11",
     "serve": "^1.4.0"
   }
 }
